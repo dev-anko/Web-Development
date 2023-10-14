@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .blue{
+        color: blue;
+    }
+    .red{
+        color: red;
+    }
+</style>
+<body>
+    <h1>DOM Çalışıyoruz</h1>
+    <p>Bu düz bir p etiketi.</p>
+    <p>Bu düz bir p etiketi..</p>
+    <p id="p1">Bu id'si p1 olan bir p etiketi</p>
+    <p id="p2">Bu id'si p2 olan bir p etiketi</p>
+    <p id="p3">Bu id'si p3 olan bir p etiketi</p>
+    <p class="p1">Bu class'ı p1 olan bir p etiketi</p>
+    <p class="p2">Bu class'ı p2 olan bir p etiketi</p>
+    <p class="p3">Bu class'ı p3 olan bir p etiketi</p>
+</body>
+<script>
+    let a = document.querySelectorAll("p");
+    console.log(a)
+    a.forEach(function(item){
+        console.log(a)
+        item.classList.add("blue");
+    });
+
+    console.log("-----------------")
+
+    let b = document.getElementsByTagName("p");
+    console.log(b)
+    b[0].classList.add("red");
+    b[1].classList.add("red");
+    b[2].classList.add("red");
+    b.item(3).classList.add("red");
+
+    // Anladığım kadarıyla querySelectorAll ile aldığımız veriler bir array olarak geliyor.
+    // getElementsByTagName ile aldığımız veriler ise bir HTMLCollection olarak geliyor.
+    // HTMLCollection ile gelen verileri array'e çevirmek için Array.from() kullanabiliriz.
+    // Array.from() ile gelen verileri array'e çevirdikten sonra forEach ile döngüye sokabiliriz.
+    // HTMLCollection ile gelen verileri forEach ile döngüye sokamayız.
+    
+    
+</script>
+</html>
