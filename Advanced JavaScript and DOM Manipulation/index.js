@@ -107,7 +107,7 @@
 
 // Using keyboard event listeners to check for key presses
 
-document.addEventListener("keydown", function(event)
-{
-    console.log(event);
-})
+// document.addEventListener("keydown", function(event)
+// {
+//     console.log(event);
+// })
