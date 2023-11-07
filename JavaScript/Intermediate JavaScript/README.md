@@ -32,64 +32,82 @@ insan der ki x=3 evet sonra x'in bir fazlasını y'ye atamış sonra y'ye bir ek
 - Bir fonksiyon, belirli bir işlevi yerine getiren bir kod bloğunu temsil eder. Bir fonksiyon tanımlandığında, bu işlev kodu belirli bir isme ve bir dizi parametreye sahip olur.
 - Örnek bir fonksiyon tanımı:
 
-`` function sayHello() {console.log("Merhaba, Dünya!");} ``
+```javascript
+function sayHello() 
+    {
+        console.log("Merhaba, Dünya!");
+    }
+```
 
 ---
 
-Fonksiyon Çağırma:
-Bir fonksiyonu çalıştırmak veya çağırmak için fonksiyon adını ve parantezleri kullanmanız gerekir:
+### Fonksiyon Çağırma:
+- Bir fonksiyonu çalıştırmak veya çağırmak için fonksiyon adını ve parantezleri kullanmanız gerekir:
 
-javascript
+```javascript
+sayHello(); // "Merhaba, Dünya!" yazdırır. Tabii, yukarıdaki fonksiyon ile kullanman lazım.
+```
+---
 
-sayHello(); // "Merhaba, Dünya!" yazdırır
-Parametreler:
-Fonksiyonlara, işlevlerini yerine getirirken gereken verileri iletmek için parametreler ekleyebilirsiniz. Parametreler, fonksiyonun parantez içindeki değişkenlerdir.
+### Parametreler:
+- Fonksiyonlara, işlevlerini yerine getirirken gereken verileri iletmek için parametreler ekleyebilirsiniz. Parametreler, fonksiyonun parantez içindeki değişkenlerdir.
+- Örnek bir fonksiyon parametreleri:
 
-Örnek bir fonksiyon parametreleri:
-
-javascript
-
+```javascript
 function greet(name) {
     console.log("Merhaba, " + name + "!");
 }
-Fonksiyonu çağırırken parametre değerleri sağlanır:
+```
 
-javascript
+- Fonksiyonu çağırırken parametre değerleri sağlanır:
 
+```javascript
 greet("Ahmet"); // "Merhaba, Ahmet!" yazdırır
-Dönüş Değeri:
-Bir fonksiyon, işlevini tamamladığında bir sonuç dönebilir. return ifadesi ile dönüş değeri belirtilir. Dönüş değeri, fonksiyonu çağıran yere aktarılır.
+```
+---
 
-Örnek bir fonksiyon dönüş değeri:
+### Dönüş Değeri:
+- Bir fonksiyon, işlevini tamamladığında bir sonuç dönebilir. return ifadesi ile dönüş değeri belirtilir. Dönüş değeri, fonksiyonu çağıran yere aktarılır.
 
-javascript
+- Örnek bir fonksiyon dönüş değeri:
 
+```javascript
 function toplam(a, b) {
     return a + b;
 }
-Dönüş değeri, bir değişkene atanabilir veya doğrudan kullanılabilir:
+```
 
-javascript
+- Dönüş değeri, bir değişkene atanabilir veya doğrudan kullanılabilir:
 
+```javascript
 var sonuc = toplam(5, 3); // sonuc = 8
-Anonim Fonksiyonlar:
-JavaScript'te isimsiz veya anonim fonksiyonlar da tanımlayabilirsiniz. Bu tür fonksiyonlar, genellikle başka bir fonksiyon içinde veya bir değişken olarak kullanılır.
+```
 
-Örnek anonim fonksiyon:
+---
 
-javascript
+### Anonim Fonksiyonlar:
 
+- JavaScript'te isimsiz veya anonim fonksiyonlar da tanımlayabilirsiniz. Bu tür fonksiyonlar, genellikle başka bir fonksiyon içinde veya bir değişken olarak kullanılır.
+
+- Örnek anonim fonksiyon:
+
+```javascript
 var toplama = function(a, b) {
     return a + b;
 };
-Fonksiyon İfadeleri:
-JavaScript, fonksiyonları değer olarak kullanmanıza izin verir. Bir fonksiyonu bir değişkene atayabilir, başka bir fonksiyona argüman olarak geçirebilir veya dizi içinde saklayabilirsiniz.
+```
 
-Örnek bir fonksiyon ifadesi:
+---
 
-javascript
+### Fonksiyon İfadeleri:
+- JavaScript, fonksiyonları değer olarak kullanmanıza izin verir. Bir fonksiyonu bir değişkene atayabilir, başka bir fonksiyona argüman olarak geçirebilir veya dizi içinde saklayabilirsiniz.
 
-var selamla = function(name) {
+- Örnek bir fonksiyon ifadesi:
+
+```javascript
+var selamlar = function(name) {
     console.log("Merhaba, " + name + "!");
 };
-Bu, JavaScript'teki temel fonksiyon kavramlarını kapsar. Fonksiyonlar, kodunuzu daha organize hale getirmenize, tekrar kullanabilirliği artırmanıza ve karmaşık işlemleri kolayca yönetmenize yardımcı olur.
+```
+
+- Bu, JavaScript'teki temel fonksiyon kavramlarını kapsar. Fonksiyonlar, kodunuzu daha organize hale getirmenize, tekrar kullanabilirliği artırmanıza ve karmaşık işlemleri kolayca yönetmenize yardımcı olur.
