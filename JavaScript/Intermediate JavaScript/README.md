@@ -130,33 +130,45 @@ console.log(Math.floor(a*100)) // 0-100 arası sayı döndürecektir.
 ---
 
 ## Control Statements: Using If-Else Conditionals
+**NOT: Bu kısımda şahsi notlarım olmadığı için 30-Days-Of-JavaScript notlarını kullandım. Daha öncede çözmüş olduğum bir repo. Bunu esas readme'ye ekleyeceğim**
 
-- Koşullu ifadeler farklı koşullara dayalı karar vermek için kullanılır. Örneğin x varsa a olayı gerçekleşsin, y varsa b olayı gerçekleşsin, z varsa c olayı gerçekleşsin, hiç biri yoksa d olayı gerçekleşsin gibi ifadelerdir.
+Koşullu ifadeler farklı koşullara dayalı karar vermek için kullanılır. Örneğin x varsa a olayı gerçekleşsin, y varsa b olayı gerçekleşsin, z varsa c olayı gerçekleşsin, hiç biri yoksa d olayı gerçekleşsin gibi ifadelerdir.
 
+### If
 JavaScript ve diğer programlama dillerinde if anahtar kelimesi, bir koşulun doğru olup olmadığını kontrol etmek ve blok kodunu yürütmek için kullanılır. Bir if koşulu kullanmak oluşturmak için normal parantez ve küme parantezlerine ihtiyaç duyurulur. ({})
 
+```javascript
 // syntax
 if (condition) {
   //kodun bu kısmı doğru koşul için çalışır
 }
+```
+
 Örnek:
 
+```javascript
 let num = 3
 if (num > 0) {
   console.log(`${num} is a positive number`)
 }
 //  3 pozitif bir sayıdır
+```
+
 Yukarıdaki koşul örneğinde görebileceğiniz gibi 3, 0'dan büyüktür, yani pozitif bir sayıdır. Koşul doğruydu ve kod bloğu yürütüldü. Ancak koşul yanlışsa herhangi bir sonuç göremeyiz.
 
+```javascript
 let isRaining = true
 if (isRaining) {
   console.log('Remember to take your rain coat.')
 }
+```
+
 Aynısı ikinci koşul için de geçerlidir, isRaining false ise if bloğu yürütülmez ve herhangi bir çıktı görmeyiz. Yanlış bir koşulun sonucunu görmek için, else ile başka bir bloğumuz olmalıdır.
 
-If Else
+## If Else
 Koşul doğruysa, ilk blok yürütülür, doğru değilse, else koşul yürütülür.
 
+```javascript
 // syntax
 if (condition) {
   // kodun bu kısmı doğru koşul için çalışır
@@ -193,11 +205,14 @@ if (isRaining) {
   console.log('No need for a rain coat.')
 }
 // Yağmurluğa gerek yok.
+```
 Son koşul yanlıştır, bu nedenle else bloğu yürütülmüştür. Ya ikiden fazla koşulumuz varsa? Bu durumda else if koşullarını kullanırdık.
 
-If Else if Else
+
+## If Else if Else
 Hayatımızda günlük kararlar veririz. Kararları bir veya iki koşulu kontrol ederek değil, birden çok koşula göre veririz. Günlük hayatımızda olduğu gibi programlama da şartlarla doludur. Birden fazla koşulumuz olduğunda else if kullanırız.
 
+```javascript
 // syntax
 if (condition) {
      // code
@@ -207,8 +222,10 @@ if (condition) {
     //  code
 
 }
+```
 Örnek:
 
+```javascript
 let a = 0
 if (a > 0) {
   console.log(`${a} is a positive number`)
@@ -230,11 +247,13 @@ if (weather === 'rainy') {
 } else {
   console.log('No need for rain coat.')
 }
+```
 
 ## Switch
 
 Switch, if else if else için bir alternatiftir. Switch ifadesi bir switch anahtar sözcüğüyle başlar, ardından bir parantez ve kod bloğu gelir. Kod bloğunun içinde farklı durumlarımız olacak. Case bloğu, switch parantezindeki değer vaka değeriyle eşleşirse çalışır. Break ifadesi, koşul yerine getirildikten sonra kod yürütmesini sonlandırmak içindir. Default blok, tüm durumlar koşulu karşılamıyorsa çalışır.
 
+```javascript
 switch(caseValue){
   case 1:
     // code
@@ -308,12 +327,15 @@ switch (true) {
   default:
     console.log('Entered value was not a number');
 }
+```
 
 ## Ternary Operatörü
 
 Koşullar yazmanın başka bir yolu da üçlü operatörleri kullanmaktır. Bunu diğer bölümlerde ele aldık, ancak burada da belirtmek gerekir.
 
+```javascript
 let isRaining = true
 isRaining
   ? console.log('You need a rain coat.')
   : console.log('No need for a rain coat.')
+```
