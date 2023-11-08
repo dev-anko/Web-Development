@@ -20,9 +20,6 @@
 
 ## JavaScript Variables
 - “Prompt” anahtar kelimesini öğreniyoruz. Bunu yazdığın zaman chrome karşına adını soran ve adını girebildiğin bir popup çıkarır.
-
-![popup](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/64d316e2-07ef-4246-a574-4dd819bf1429/Untitled.png)
-
 - Adımızı girdik ancak bu bilgiyi hafızada bir yere kaydetmedik ve uçtu gitti. Bunu hatırlamak için değişken kullanacağız ve değişken tanımlamanın üç adet anahtar kelimesi vardır. Bunlar `let`, `var` ve `const` anahtar kelimeleridir. Bu anahtar kelimeler, değişkenleri tanımlarken ve nasıl davranacaklarını belirtirken kullanılır. Aslında, bu anahtar kelimeler değişkenlere atanan değerlerin veri tiplerini belirler.
 
 Bu anahtar kelimeler arasındaki temel farklar şunlardır:
@@ -35,12 +32,16 @@ Bu anahtar kelimeler arasındaki temel farklar şunlardır:
 
 `var x = 5`;
 
+---
+
 `let`:
 - Blok kapsamına sahiptir (block scope).
 - İlerletilmiş değişken tanımlama (hoisting) özelliğine sahiptir, ancak kapsamın başında tanımlanmış gibi davranır.
 - Aynı isimde bir değişken sadece bir kez tanımlanabilir.
 
 `let x = 5`;
+
+---
 
 `const`:
 const değişkeni sabit bir değere sahiptir ve bir kez atandığında değiştirilemez.

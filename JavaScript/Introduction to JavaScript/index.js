@@ -1,4 +1,4 @@
-// ALERT KULLANIMI
+// Alert kullanımı
 
 // alert("Merhaba Dünya"); yalnız aklında olsun güzel insan bu kod vscode'da yazdığın zaman çalışmıyor çünkü vscode'da alert fonksiyonu yok. 
 // Bu kodu tarayıcıda çalıştırman gerekiyor. Bunun için de index.html dosyasını tarayıcıda açman gerekiyor. Bu dosyayı tarayıcıda açtığın zaman alert fonksiyonu çalışacaktır.
