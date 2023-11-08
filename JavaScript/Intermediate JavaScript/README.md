@@ -2,20 +2,20 @@
 **Sayın okur unutma ki bunlar benim kişisel notlarım, anlatım tarzı biraz enteresan gelebilir :)**
 **Buradaki notların kullanımlarını veyahut ilgili projeleri index.js dosyası içerisinde bulabilirsin. Her biri yorum satırı şeklinde olucak ancak hangi başlık ile ilgili olduklarınıda belirteceğim. Aç bir derleyici güle güle kullan. Yalnızca projeler yorum satırı şeklinde değil normal şekilde olucak.**
 
-## 1.Changing Casing in Text
+## Changing Casing in Text
 
 - `toUpperCase()` fonksiyonu tüm karakterleri büyük harfe dönüştürür.
 - `toLowerCase()` fonksiyonu tüm karakterleri küçük harfe dönüştürür.
 
 ---
 
-## 2.Basic Arithmetic and the Modulo Operator in Javascript
+## Basic Arithmetic and the Modulo Operator in Javascript
 
 - Modulo dediği şey mod almak demek kalanı veriyor işte. Bu ne agresiflik birader?
 
 ---
 
-## 3.Increment and Decrement Expressions
+## Increment and Decrement Expressions
 
 - Hani şu bir ekleme ve çıkarma kısa yolları var ya, aha bak şunlar ya:
 - `x++`, `x—-`, `x+=`, `x-=`;
@@ -27,7 +27,7 @@ insan der ki x=3 evet sonra x'in bir fazlasını y'ye atamış sonra y'ye bir ek
 
 ---
 
-## 4.Functions (burayı chatgpt'den aldım şimdilik sonra belki düzeltiriz ama gerek yok gibi ya)
+## Functions (burayı chatgpt'den aldım şimdilik sonra belki düzeltiriz ama gerek yok gibi ya)
 
 - Bir fonksiyon, belirli bir işlevi yerine getiren bir kod bloğunu temsil eder. Bir fonksiyon tanımlandığında, bu işlev kodu belirli bir isme ve bir dizi parametreye sahip olur.
 - Örnek bir fonksiyon tanımı:
@@ -41,7 +41,7 @@ function sayHello()
 
 ---
 
-### 5.Fonksiyon Çağırma:
+### Fonksiyon Çağırma:
 - Bir fonksiyonu çalıştırmak veya çağırmak için fonksiyon adını ve parantezleri kullanmanız gerekir:
 
 ```javascript
@@ -49,7 +49,7 @@ sayHello(); // "Merhaba, Dünya!" yazdırır. Tabii, yukarıdaki fonksiyon ile k
 ```
 ---
 
-### 6.Parametreler:
+### Parametreler:
 - Fonksiyonlara, işlevlerini yerine getirirken gereken verileri iletmek için parametreler ekleyebilirsiniz. Parametreler, fonksiyonun parantez içindeki değişkenlerdir.
 - Örnek bir fonksiyon parametreleri:
 
@@ -66,7 +66,7 @@ greet("Ahmet"); // "Merhaba, Ahmet!" yazdırır
 ```
 ---
 
-### 7.Dönüş Değeri:
+### Dönüş Değeri:
 - Bir fonksiyon, işlevini tamamladığında bir sonuç dönebilir. return ifadesi ile dönüş değeri belirtilir. Dönüş değeri, fonksiyonu çağıran yere aktarılır.
 
 - Örnek bir fonksiyon dönüş değeri:
@@ -85,7 +85,7 @@ var sonuc = toplam(5, 3); // sonuc = 8
 
 ---
 
-### 8.Anonim Fonksiyonlar:
+### Anonim Fonksiyonlar:
 
 - JavaScript'te isimsiz veya anonim fonksiyonlar da tanımlayabilirsiniz. Bu tür fonksiyonlar, genellikle başka bir fonksiyon içinde veya bir değişken olarak kullanılır.
 
@@ -99,7 +99,7 @@ var toplama = function(a, b) {
 
 ---
 
-### 9.Fonksiyon İfadeleri:
+### Fonksiyon İfadeleri:
 - JavaScript, fonksiyonları değer olarak kullanmanıza izin verir. Bir fonksiyonu bir değişkene atayabilir, başka bir fonksiyona argüman olarak geçirebilir veya dizi içinde saklayabilirsiniz.
 
 - Örnek bir fonksiyon ifadesi:
@@ -112,7 +112,7 @@ var selamlar = function(name) {
 
 - Bu, JavaScript'teki temel fonksiyon kavramlarını kapsar. Fonksiyonlar, kodunuzu daha organize hale getirmenize, tekrar kullanabilirliği artırmanıza ve karmaşık işlemleri kolayca yönetmenize yardımcı olur.
 
-## 10.Random Number Generation in JavaScript
+## Random Number Generation in JavaScript
 
 - JavaScript dilinde random sayı oluşturmak için Math.random() methodunu kullanıyoruz. Ancak burada ufak bir sorunumuz var. Bu Math.random() methodu yalnızca 0 ile 0.9 arasında sayı üretiyor. Örneğin:
 ```javascript
@@ -129,12 +129,12 @@ console.log(Math.floor(a*100)) // 0-100 arası sayı döndürecektir.
 
 ---
 
-## 11.Control Statements: Using If-Else Conditionals
+## Control Statements: Using If-Else Conditionals
 **NOT: Bu kısımda şahsi notlarım olmadığı için 30-Days-Of-JavaScript notlarını kullandım. Daha öncede çözmüş olduğum bir repo. Bunu esas readme'ye ekleyeceğim**
 
 Koşullu ifadeler farklı koşullara dayalı karar vermek için kullanılır. Örneğin x varsa a olayı gerçekleşsin, y varsa b olayı gerçekleşsin, z varsa c olayı gerçekleşsin, hiç biri yoksa d olayı gerçekleşsin gibi ifadelerdir.
 
-### 12.If
+### If
 JavaScript ve diğer programlama dillerinde if anahtar kelimesi, bir koşulun doğru olup olmadığını kontrol etmek ve blok kodunu yürütmek için kullanılır. Bir if koşulu kullanmak oluşturmak için normal parantez ve küme parantezlerine ihtiyaç duyurulur. ({})
 
 ```javascript
@@ -165,7 +165,7 @@ if (isRaining) {
 
 Aynısı ikinci koşul için de geçerlidir, isRaining false ise if bloğu yürütülmez ve herhangi bir çıktı görmeyiz. Yanlış bir koşulun sonucunu görmek için, else ile başka bir bloğumuz olmalıdır.
 
-### 13.If Else
+### If Else
 Koşul doğruysa, ilk blok yürütülür, doğru değilse, else koşul yürütülür.
 
 ```javascript
@@ -209,7 +209,7 @@ if (isRaining) {
 Son koşul yanlıştır, bu nedenle else bloğu yürütülmüştür. Ya ikiden fazla koşulumuz varsa? Bu durumda else if koşullarını kullanırdık.
 
 
-### 14.If Else if Else
+### If Else if Else
 Hayatımızda günlük kararlar veririz. Kararları bir veya iki koşulu kontrol ederek değil, birden çok koşula göre veririz. Günlük hayatımızda olduğu gibi programlama da şartlarla doludur. Birden fazla koşulumuz olduğunda else if kullanırız.
 
 ```javascript
@@ -249,7 +249,7 @@ if (weather === 'rainy') {
 }
 ```
 
-### 15.Switch
+### Switch
 
 Switch, if else if else için bir alternatiftir. Switch ifadesi bir switch anahtar sözcüğüyle başlar, ardından bir parantez ve kod bloğu gelir. Kod bloğunun içinde farklı durumlarımız olacak. Case bloğu, switch parantezindeki değer vaka değeriyle eşleşirse çalışır. Break ifadesi, koşul yerine getirildikten sonra kod yürütmesini sonlandırmak içindir. Default blok, tüm durumlar koşulu karşılamıyorsa çalışır.
 
@@ -329,7 +329,7 @@ switch (true) {
 }
 ```
 
-### 16.Ternary Operatörü
+### Ternary Operatörü
 
 Koşullar yazmanın başka bir yolu da üçlü operatörleri kullanmaktır. Bunu diğer bölümlerde ele aldık, ancak burada da belirtmek gerekir.
 
@@ -340,16 +340,16 @@ isRaining
   : console.log('No need for a rain coat.')
 ```
 
-## 17.Arrayler ve bazı güzel JavaScript objeleri ve methodları
+## Arrayler ve bazı güzel JavaScript objeleri ve methodları
 **Buradaki notlar 30-Days-of-JavaScript notlarından alınmıştır.**
 
-### 18.Array tanımı
+### Array tanımı
 
 - Değişkenlerin aksine, diziler Çoklu değerleri depolayabilirler. Dizi'deki her bir değer index'e sahiptir, ve her index bellek adresindeki bir referans'ı işaret eder. Bu index'ler kullanılarak her bir değere ulaşım sağlanabilir. Bir dizinin index'i sıfır'dan başlar ve dizinin son elemanının index'i, dizinin uzunluğundan bir eksiktir.
 
 - Bir dizi, sıralı ve değiştirilebilirdir. Farklı veri türlerinin bir koleksiyonudur. Bir dizi, tekrar edilen elemanların ve farklı veri türlerinin depolanmasına izin verir. Bir dizi boş olabilir veya farklı veri türü değerlerine sahip olabilir.
 
-## 19.Boş bir dizi oluşturmak
+## Boş bir dizi oluşturmak
 
 - JavaScript'te birçok farklı yol ile dizi oluşturabiliriz. Bir dizi oluşturmanın farklı yollarını görelim. Bir dizi değişkeni tanımlamak için let yerine const kullanmak çok yaygındır. Const kullanıyorsanız, bu değişken adını bir daha kullanmayacağınız anlamına gelir.
 
@@ -380,7 +380,7 @@ const  arr = []
 console.log(arr)
 ```
 
-## 20.Değerlere sahip bir dizi oluşturmak
+## Değerlere sahip bir dizi oluşturmak
 
 - Başlangıç değerine sahip bir dizi. length özelliğini kullanarak dizinin uzuluğunu bulabiliriz.
 
@@ -439,11 +439,11 @@ console.log('Countries:', countries)
 console.log('Number of countries:', countries.length)
 ```
 
-## 21.Array fonksiyonları ve array'leri manipüle etmek.
+## Array fonksiyonları ve array'leri manipüle etmek.
 
 - Diziyi manüple edebilmek için farklı metotlar vardır. Bunlar dizilerle uğraşmak için kullanışlı yöntemlerden bazılarıdır. Bu yöntemler: Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift.
 
-### 22.Dizi Constructor
+### Dizi Constructor
 
 Array: Bir dizi yaratmak için kullanılır.
 
@@ -457,7 +457,7 @@ const  eightEmptyValues = Array(8) // sekiz tane boş değer yaratır
 console.log(eightEmptyValues) // [empty x 8]
 ```
 
-### 23.fill
+### fill
 
 - fill: Bütün dizi elemanlarını statik değerle doldurur.
 
@@ -478,7 +478,7 @@ const  four4values = Array(4).fill(4) //'4' değerine sahip 8 tane eleman oluşt
 console.log(four4values) // [4, 4, 4, 4]
 ```
 
-### 24.Concat
+### Concat
 
 - Concat: İki diziyi birbiri ile birleştirir. (Sadece iki değil daha fazlasınıda birleştirebilirsin.)
 ```javascript
@@ -491,7 +491,7 @@ const  thirdList = firstList.concat(secondList)
 console.log(thirdList) // [1, 2, 3, 4, 5, 6]
 ```
 
-### 25.indexOf
+### indexOf
 
 - indexOf: O elemanın dizide olup olmadığını kontrol eder, eğer varsa mevcut index numarasını, yoksa -1 değerini döndürür.
 
@@ -507,7 +507,7 @@ console.log(numbers.indexOf(1)) // -> 0
 console.log(numbers.indexOf(6)) // -> -1
 ```
 
-### 26.lastIndexOf
+### lastIndexOf
 
 - lastIndexOf: Dizideki son elemanın pozisyonunu verir. Eğer mevcutsa o elemanın index numarasını döner, mevcut değilse -1 döner.
 
@@ -525,7 +525,7 @@ console.log(numbers.lastIndexOf(4)) // 3
 console.log(numbers.lastIndexOf(6)) // -1
 ```
 
-### 27.includes
+### includes
 
 - includes: Bir dizide bir öğenin olup olmadığını kontrol etmek için kullanılır.Mevcut ise, true değerini döndürür, aksi takdirde false değerini döndürür.
 
@@ -551,7 +551,7 @@ console.log(webTechs.includes('Node')) // true
 console.log(webTechs.includes('C')) // false
 ```
 
-### 28.Array.isArray
+### Array.isArray
 
 - Array.isArray: Veri tipinin bir dizi olup olmadığını kontrol etmek için kullanılır.
 
@@ -565,7 +565,7 @@ const  number = 100
 console.log(Array.isArray(number)) // false
 ```
 
-### 29.toString
+### toString
 
 - toString: Diziyi string bir ifadeye çevirir.
 
@@ -579,7 +579,7 @@ const  names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
 console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
 ```
 
-### 30.join
+### join
 
 - join: Dizinin elemanlarını birleştirmek için kullanılır, join yönteminde ilettiğimiz argüman dizide birleştirilir ve bir string olarak döndürülür. Varsayılan olarak bir virgül ile birleşir, ancak elemanlar arasında birleştirilebilecek farklı dizi parametreleri iletebiliriz.
 
@@ -631,7 +631,7 @@ console.log(webTechs.join()) // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
 console.log(webTechs.join(' # ')) // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
 ```
 
-### 31.slice
+### slice
 
 - Slice: Bir aralıktaki çoklu elemanları dilimler İki parametre alır. Bu parametreler, başlangıç ve bitiş konumlarıdır. Bitiş konumunu dahil etmez.
 
@@ -647,7 +647,7 @@ console.log(numbers.slice(0, numbers.length)) // Bütün öğeyi kopyalar
 console.log(numbers.slice(1,4)) // -> [2,3,4] // son elemanı dahil etmez
 ```
 
-### 32.splice
+### splice
 
 - Splice: üç parametre alır :başlangıç konumu, kaldırılması gereken eleman sayısı ve eklenmesi gereken eleman sayısı.
 
@@ -671,7 +671,7 @@ numbers.splice(3, 3, 7, 8, 9)
 console.log(numbers.splice(3, 3, 7, 8, 9)) // -> [1, 2, 3, 7, 8, 9] //2 eleman kaldırdı ve yerine 3 eleman ekledi
 ```
 
-### 33.push
+### push
 - push: Dizinin sonuna eleman ekler.Varolan bir diziye eleman eklemek için push metodunu kullanırız.
 
 ```javascript
@@ -710,7 +710,7 @@ fruits.push('lime')
 console.log(fruits) // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
 ```
 
-### 34.pop
+### pop
 
 - pop: Dizinin sonundaki elemanı siler.
 
@@ -722,7 +722,7 @@ numbers.pop() // -> Sondaki elemanı siler
 console.log(numbers) // -> [1,2,3,4]
 ```
 
-### 35.shift
+### shift
 
 - shift: Dizinin en başındaki elemanı siler.
 ```javascript
@@ -733,7 +733,7 @@ numbers.shift() // -> baştan bir elemanı kaldırır.
 console.log(numbers) // -> [2,3,4,5]
 ```
 
-### 36.unshift
+### unshift
 
 - unshift: Dizinin başına dizi elemanı ekler.
 
@@ -745,7 +745,7 @@ numbers.unshift(0) // -> en başa eleman ekler
 console.log(numbers) // -> [0,1,2,3,4,5]
 ```
 
-### 37.reverse
+### reverse
 
 - reverse: Dizi sıralamasını terse çevirir.
 
@@ -761,7 +761,7 @@ numbers.reverse()
 console.log(numbers) // [1, 2, 3, 4, 5]
 ```
 
-### 38.sort
+### sort
 
 - sort: Dizi elemanlarını alfabetik sırada düzenleyin.
 
@@ -797,7 +797,7 @@ webTechs.reverse() // sortladıktan sonra reverse edebiliriz.
 console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HTML", "CSS"]
 ```
 
-## 39.Dizi içinde diziler
+## Dizi içinde diziler
 
 - Diziler farklı veri tiplerinde elemanları ve yeni bir dizi de depolayabilirler Şimdi dizi içinde bir dizi tanımlayalım.
 
@@ -829,11 +829,11 @@ console.log(fullStack[0]) // ["HTML", "CSS", "JS", "React", "Redux"]
 console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
 ```
 
-## 40.Döngüler (loops)
+## Döngüler (loops)
 
 - JavaScript'te döngüler, belirli bir işlemi tekrarlayarak kodunuzu yürütmenize olanak tanır. Döngüler, belirli bir şart veya koşul sağlandığı sürece çalışır. JavaScript'te yaygın olarak kullanılan döngüler şunlardır:
 
-### 41.for döngüsü
+### for döngüsü
 
 - for döngüsü, belirli bir sayıda veya bir dizideki elemanları dolaşmak için kullanılır. İşte temel for döngüsünün yapısı:
 ```javascript
@@ -848,7 +848,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 
-### 42.while döngüsü
+### while döngüsü
 - while döngüsü, belirli bir koşul sağlandığı sürece çalışır. Koşul, döngünün başında kontrol edilir ve sadece koşul doğru olduğunda döngü devam eder. İşte temel while döngüsünün yapısı:
 ```javascript
 while (koşul) {
@@ -866,7 +866,7 @@ while (i < 5) {
 }
 ```
 
-### 43.do...while döngüsü
+### do...while döngüsü
 - do...while döngüsü, diğer while döngüsünden farklı olarak koşulu döngünün sonunda kontrol eder. Bu nedenle döngü en az bir kez çalışır. İşte temel do...while döngüsünün yapısı:
 
 ```javascript
@@ -884,7 +884,7 @@ do {
 } while (i < 5);
 ```
 
-### 44.for...of döngüsü
+### for...of döngüsü
 - for...of döngüsü, bir dizinin veya iterable bir nesnenin elemanları üzerinde dolaşmak için kullanılır. Bu döngü, elemanları doğrudan erişmenizi sağlar.
 ```javascript
 for (const eleman of dizi) {

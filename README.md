@@ -6,4 +6,4 @@ Bu reponun var olma amacı web development alanındaki bilgilerimi geliştirirke
 
 **Dikkat! Bu repo şuan yapım aşamasındadır. Bittiği zaman(umarım) tamamiyle düzenleyerek herkesle paylaşacağım!**
 
-**Konuların başında numaralandırmalar vardır. Bu numaralar proje adını rahat bulabilmeniz içindir. 10 numaralı başlığın proje adı proje10.js'dir.**
+
