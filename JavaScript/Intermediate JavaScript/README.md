@@ -438,3 +438,466 @@ console.log('Countries:', countries)
 
 console.log('Number of countries:', countries.length)
 ```
+
+## Array fonksiyonları ve array'leri manipüle etmek.
+
+- Diziyi manüple edebilmek için farklı metotlar vardır. Bunlar dizilerle uğraşmak için kullanışlı yöntemlerden bazılarıdır. Bu yöntemler: Array, length, concat, indexOf, slice, splice, join, toString, includes, lastIndexOf, isArray, fill, push, pop, shift, unshift.
+
+### Dizi Constructor
+
+Array: Bir dizi yaratmak için kullanılır.
+
+```javascript
+const  arr = Array() // boş bir dizi yaratır
+
+console.log(arr)
+
+const  eightEmptyValues = Array(8) // sekiz tane boş değer yaratır
+
+console.log(eightEmptyValues) // [empty x 8]
+```
+
+### fill
+
+- fill: Bütün dizi elemanlarını statik değerle doldurur.
+
+```javascript
+const  arr = Array() // Boş bir dizi yaratır
+
+console.log(arr)
+const  eightXvalues = Array(8).fill('X') // 'X'değerine sahip 8 tane eleman oluşuturur.
+
+console.log(eightXvalues) // ['X', 'X','X','X','X','X','X','X']
+
+const  eight0values = Array(8).fill(0) // '0' değerine sahip 8 tane eleman oluşturur.
+
+console.log(eight0values) // [0, 0, 0, 0, 0, 0, 0, 0]
+
+const  four4values = Array(4).fill(4) //'4' değerine sahip 8 tane eleman oluşturur.
+
+console.log(four4values) // [4, 4, 4, 4]
+```
+
+### Concat
+
+- Concat: İki diziyi birbiri ile birleştirir. (Sadece iki değil daha fazlasınıda birleştirebilirsin.)
+```javascript
+const  firstList = [1, 2, 3]
+
+const  secondList = [4, 5, 6]
+
+const  thirdList = firstList.concat(secondList)
+
+console.log(thirdList) // [1, 2, 3, 4, 5, 6]
+```
+
+### indexOf
+
+- indexOf: O elemanın dizide olup olmadığını kontrol eder, eğer varsa mevcut index numarasını, yoksa -1 değerini döndürür.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+console.log(numbers.indexOf(5)) // -> 4
+
+console.log(numbers.indexOf(0)) // -> -1
+
+console.log(numbers.indexOf(1)) // -> 0
+
+console.log(numbers.indexOf(6)) // -> -1
+```
+
+### lastIndexOf
+
+- lastIndexOf: Dizideki son elemanın pozisyonunu verir. Eğer mevcutsa o elemanın index numarasını döner, mevcut değilse -1 döner.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5, 3, 1, 2]
+
+console.log(numbers.lastIndexOf(2)) // 7
+
+console.log(numbers.lastIndexOf(0)) // -1
+
+console.log(numbers.lastIndexOf(1)) // 6
+
+console.log(numbers.lastIndexOf(4)) // 3
+
+console.log(numbers.lastIndexOf(6)) // -1
+```
+
+### includes
+
+- includes: Bir dizide bir öğenin olup olmadığını kontrol etmek için kullanılır.Mevcut ise, true değerini döndürür, aksi takdirde false değerini döndürür.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+console.log(numbers.includes(5)) // true
+
+console.log(numbers.includes(0)) // false
+
+console.log(numbers.includes(1)) // true
+
+console.log(numbers.includes(6)) // false
+
+  
+
+const  webTechs = ['HTML','CSS','JavaScript','React','Redux','Node','MongoDB'] // Web teknolojileri dizisi
+
+
+
+console.log(webTechs.includes('Node')) // true
+
+console.log(webTechs.includes('C')) // false
+```
+
+### Array.isArray
+
+- Array.isArray: Veri tipinin bir dizi olup olmadığını kontrol etmek için kullanılır.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+console.log(Array.isArray(numbers)) // true
+
+const  number = 100
+
+console.log(Array.isArray(number)) // false
+```
+
+### toString
+
+- toString: Diziyi string bir ifadeye çevirir.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+console.log(numbers.toString()) // 1,2,3,4,5
+
+const  names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+
+console.log(names.toString()) // Asabeneh,Mathias,Elias,Brook
+```
+
+### join
+
+- join: Dizinin elemanlarını birleştirmek için kullanılır, join yönteminde ilettiğimiz argüman dizide birleştirilir ve bir string olarak döndürülür. Varsayılan olarak bir virgül ile birleşir, ancak elemanlar arasında birleştirilebilecek farklı dizi parametreleri iletebiliriz.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+console.log(numbers.join()) // 1,2,3,4,5
+
+  
+
+const  names = ['Asabeneh', 'Mathias', 'Elias', 'Brook']
+
+  
+
+console.log(names.join()) // Asabeneh,Mathias,Elias,Brook
+
+console.log(names.join('')) //AsabenehMathiasEliasBrook
+
+console.log(names.join(' ')) //Asabeneh Mathias Elias Brook
+
+console.log(names.join(', ')) //Asabeneh, Mathias, Elias, Brook
+
+console.log(names.join(' # ')) //Asabeneh # Mathias # Elias # Brook
+
+  
+
+const  webTechs = [
+
+'HTML',
+
+'CSS',
+
+'JavaScript',
+
+'React',
+
+'Redux',
+
+'Node',
+
+'MongoDB'
+
+] // List of web technologies
+
+  
+
+console.log(webTechs.join()) // "HTML,CSS,JavaScript,React,Redux,Node,MongoDB"
+
+console.log(webTechs.join(' # ')) // "HTML # CSS # JavaScript # React # Redux # Node # MongoDB"
+```
+
+### slice
+
+- Slice: Bir aralıktaki çoklu elemanları dilimler İki parametre alır. Bu parametreler, başlangıç ve bitiş konumlarıdır. Bitiş konumunu dahil etmez.
+
+```javascript
+const  numbers = [1,2,3,4,5]
+
+console.log(numbers.slice()) // -> Bütün öğeyi kopyalar
+
+console.log(numbers.slice(0)) // -> Bütün öğeyi kopyalar
+
+console.log(numbers.slice(0, numbers.length)) // Bütün öğeyi kopyalar
+
+console.log(numbers.slice(1,4)) // -> [2,3,4] // son elemanı dahil etmez
+```
+
+### splice
+
+- Splice: üç parametre alır :başlangıç konumu, kaldırılması gereken eleman sayısı ve eklenmesi gereken eleman sayısı.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+numbers.splice()
+
+console.log(numbers) // -> Bütün elemanları kaldırır
+
+const  numbers = [1, 2, 3, 4, 5]
+
+numbers.splice(0,1)
+
+console.log(numbers) // ilk elemanı kaldırır
+
+const  numbers = [1, 2, 3, 4, 5, 6]
+
+numbers.splice(3, 3, 7, 8, 9)
+
+console.log(numbers.splice(3, 3, 7, 8, 9)) // -> [1, 2, 3, 7, 8, 9] //2 eleman kaldırdı ve yerine 3 eleman ekledi
+```
+
+### push
+- push: Dizinin sonuna eleman ekler.Varolan bir diziye eleman eklemek için push metodunu kullanırız.
+
+```javascript
+// syntax
+
+const  arr = ['item1', 'item2','item3']
+
+arr.push('new item')
+
+console.log(arr)
+
+// ['item1', 'item2','item3','new item']
+
+const  numbers = [1, 2, 3, 4, 5]
+
+numbers.push(6)
+
+console.log(numbers) // -> [1,2,3,4,5,6]
+
+  
+
+numbers.pop() // -> Dizinin sonundan bir eleman çıkarır.
+
+console.log(numbers) // -> [1,2,3,4,5]
+
+let  fruits = ['banana', 'orange', 'mango', 'lemon']
+
+fruits.push('apple')
+
+console.log(fruits) // ['banana', 'orange', 'mango', 'lemon', 'apple']
+
+  
+
+fruits.push('lime')
+
+console.log(fruits) // ['banana', 'orange', 'mango', 'lemon', 'apple', 'lime']
+```
+
+### pop
+
+- pop: Dizinin sonundaki elemanı siler.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+numbers.pop() // -> Sondaki elemanı siler
+
+console.log(numbers) // -> [1,2,3,4]
+```
+
+### shift
+
+- shift: Dizinin en başındaki elemanı siler.
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+numbers.shift() // -> baştan bir elemanı kaldırır.
+
+console.log(numbers) // -> [2,3,4,5]
+```
+
+### unshift
+
+- unshift: Dizinin başına dizi elemanı ekler.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+numbers.unshift(0) // -> en başa eleman ekler
+
+console.log(numbers) // -> [0,1,2,3,4,5]
+```
+
+### reverse
+
+- reverse: Dizi sıralamasını terse çevirir.
+
+```javascript
+const  numbers = [1, 2, 3, 4, 5]
+
+numbers.reverse() // -> ters dizi sırası
+
+console.log(numbers) // [5, 4, 3, 2, 1]
+-----------------------------------------------
+numbers.reverse()
+
+console.log(numbers) // [1, 2, 3, 4, 5]
+```
+
+### sort
+
+- sort: Dizi elemanlarını alfabetik sırada düzenleyin.
+
+```javascript
+const  webTechs = [
+
+'HTML',
+
+'CSS',
+
+'JavaScript',
+
+'React',
+
+'Redux',
+
+'Node',
+
+'MongoDB'
+
+]
+
+  
+
+webTechs.sort()
+
+console.log(webTechs) // ["CSS", "HTML", "JavaScript", "MongoDB", "Node", "React", "Redux"]
+
+  
+
+webTechs.reverse() // sortladıktan sonra reverse edebiliriz.
+
+console.log(webTechs) // ["Redux", "React", "Node", "MongoDB", "JavaScript", "HTML", "CSS"]
+```
+
+## Dizi içinde diziler
+
+- Diziler farklı veri tiplerinde elemanları ve yeni bir dizi de depolayabilirler Şimdi dizi içinde bir dizi tanımlayalım.
+
+```javascript
+const  firstNums = [1, 2, 3]
+
+const  secondNums = [1, 4, 9]
+
+  
+
+const  arrayOfArray = [[1, 2, 3], [1, 2, 3]]
+
+console.log(arrayOfArray[0]) // [1, 2, 3]
+
+  
+
+const  frontEnd = ['HTML', 'CSS', 'JS', 'React', 'Redux']
+
+const  backEnd = ['Node','Express', 'MongoDB']
+
+const  fullStack = [frontEnd, backEnd]
+
+console.log(fullStack) // [["HTML", "CSS", "JS", "React", "Redux"], ["Node", "Express", "MongoDB"]]
+
+console.log(fullStack.length) // 2
+
+console.log(fullStack[0]) // ["HTML", "CSS", "JS", "React", "Redux"]
+
+console.log(fullStack[1]) // ["Node", "Express", "MongoDB"]
+```
+
+## Döngüler (loops)
+
+- JavaScript'te döngüler, belirli bir işlemi tekrarlayarak kodunuzu yürütmenize olanak tanır. Döngüler, belirli bir şart veya koşul sağlandığı sürece çalışır. JavaScript'te yaygın olarak kullanılan döngüler şunlardır:
+
+### for döngüsü
+
+- for döngüsü, belirli bir sayıda veya bir dizideki elemanları dolaşmak için kullanılır. İşte temel for döngüsünün yapısı:
+```javascript
+for (başlangıç; koşul; adım) {
+  // Döngü gövdesi: Burada tekrarlanan işlem yapılır
+}
+```
+örnek:
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+
+### while döngüsü
+- while döngüsü, belirli bir koşul sağlandığı sürece çalışır. Koşul, döngünün başında kontrol edilir ve sadece koşul doğru olduğunda döngü devam eder. İşte temel while döngüsünün yapısı:
+```javascript
+while (koşul) {
+  // Döngü gövdesi: Burada tekrarlanan işlem yapılır
+}
+```
+
+örnek:
+
+```javascript
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+
+### do...while döngüsü
+- do...while döngüsü, diğer while döngüsünden farklı olarak koşulu döngünün sonunda kontrol eder. Bu nedenle döngü en az bir kez çalışır. İşte temel do...while döngüsünün yapısı:
+
+```javascript
+do {
+  // Döngü gövdesi: Burada tekrarlanan işlem yapılır
+} while (koşul);
+```
+
+örnek:
+```javascript
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+```
+
+### for...of döngüsü
+- for...of döngüsü, bir dizinin veya iterable bir nesnenin elemanları üzerinde dolaşmak için kullanılır. Bu döngü, elemanları doğrudan erişmenizi sağlar.
+```javascript
+for (const eleman of dizi) {
+  // Döngü gövdesi: Eleman üzerinde işlem yapılır
+}
+```
+Örnek:
+```javascript
+const meyveler = ['elma', 'armut', 'kiraz'];
+for (const meyve of meyveler) {
+  console.log(meyve);
+}
+```
+
+Bu temel döngüler, JavaScript'te tekrarlayan işlemleri gerçekleştirmek için kullanılır. Hangi döngü türünün kullanılacağı, uygulamanızın ihtiyaçlarına ve döngü içeriğinize bağlı olarak değişebilir.
+
