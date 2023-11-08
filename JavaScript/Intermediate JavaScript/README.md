@@ -165,7 +165,7 @@ if (isRaining) {
 
 Aynısı ikinci koşul için de geçerlidir, isRaining false ise if bloğu yürütülmez ve herhangi bir çıktı görmeyiz. Yanlış bir koşulun sonucunu görmek için, else ile başka bir bloğumuz olmalıdır.
 
-## If Else
+### If Else
 Koşul doğruysa, ilk blok yürütülür, doğru değilse, else koşul yürütülür.
 
 ```javascript
@@ -209,7 +209,7 @@ if (isRaining) {
 Son koşul yanlıştır, bu nedenle else bloğu yürütülmüştür. Ya ikiden fazla koşulumuz varsa? Bu durumda else if koşullarını kullanırdık.
 
 
-## If Else if Else
+### If Else if Else
 Hayatımızda günlük kararlar veririz. Kararları bir veya iki koşulu kontrol ederek değil, birden çok koşula göre veririz. Günlük hayatımızda olduğu gibi programlama da şartlarla doludur. Birden fazla koşulumuz olduğunda else if kullanırız.
 
 ```javascript
@@ -249,7 +249,7 @@ if (weather === 'rainy') {
 }
 ```
 
-## Switch
+### Switch
 
 Switch, if else if else için bir alternatiftir. Switch ifadesi bir switch anahtar sözcüğüyle başlar, ardından bir parantez ve kod bloğu gelir. Kod bloğunun içinde farklı durumlarımız olacak. Case bloğu, switch parantezindeki değer vaka değeriyle eşleşirse çalışır. Break ifadesi, koşul yerine getirildikten sonra kod yürütmesini sonlandırmak içindir. Default blok, tüm durumlar koşulu karşılamıyorsa çalışır.
 
@@ -329,7 +329,7 @@ switch (true) {
 }
 ```
 
-## Ternary Operatörü
+### Ternary Operatörü
 
 Koşullar yazmanın başka bir yolu da üçlü operatörleri kullanmaktır. Bunu diğer bölümlerde ele aldık, ancak burada da belirtmek gerekir.
 
@@ -338,4 +338,103 @@ let isRaining = true
 isRaining
   ? console.log('You need a rain coat.')
   : console.log('No need for a rain coat.')
+```
+
+## Arrayler ve bazı güzel JavaScript objeleri ve methodları
+**Buradaki notlar 30-Days-of-JavaScript notlarından alınmıştır.**
+
+### Array tanımı
+
+- Değişkenlerin aksine, diziler Çoklu değerleri depolayabilirler. Dizi'deki her bir değer index'e sahiptir, ve her index bellek adresindeki bir referans'ı işaret eder. Bu index'ler kullanılarak her bir değere ulaşım sağlanabilir. Bir dizinin index'i sıfır'dan başlar ve dizinin son elemanının index'i, dizinin uzunluğundan bir eksiktir.
+
+- Bir dizi, sıralı ve değiştirilebilirdir. Farklı veri türlerinin bir koleksiyonudur. Bir dizi, tekrar edilen elemanların ve farklı veri türlerinin depolanmasına izin verir. Bir dizi boş olabilir veya farklı veri türü değerlerine sahip olabilir.
+
+## Boş bir dizi oluşturmak
+
+- JavaScript'te birçok farklı yol ile dizi oluşturabiliriz. Bir dizi oluşturmanın farklı yollarını görelim. Bir dizi değişkeni tanımlamak için let yerine const kullanmak çok yaygındır. Const kullanıyorsanız, bu değişken adını bir daha kullanmayacağınız anlamına gelir.
+
+- Array constructor'ı ( yapıcı metot ) kullanmak:
+
+```javascript
+
+// syntax
+
+const  arr = Array()
+
+// ya da
+
+// let arr = new Array()
+
+console.log(arr) // []
+```
+- Köşeli parantez kullanmak([]):
+
+```javascript
+
+// syntax
+
+// Bu boş bir dizi oluşturmak için en çok tavsiye edilen yöntemdir
+
+const  arr = []
+
+console.log(arr)
+```
+
+## Değerlere sahip bir dizi oluşturmak
+
+- Başlangıç değerine sahip bir dizi. length özelliğini kullanarak dizinin uzuluğunu bulabiliriz.
+
+```javascript
+
+const  numbers = [0, 3.14, 9.81, 37, 98.6, 100] // sayı dizisi
+
+const  fruits = ['banana', 'orange', 'mango', 'lemon'] // string dizisi, meyveler
+
+const  vegetables = ['Tomato', 'Potato', 'Cabbage', 'Onion', 'Carrot'] // string dizisi, sebzeler
+
+const  animalProducts = ['milk', 'meat', 'butter', 'yoghurt'] // string dizisi, ürünler
+
+const  webTechs = ['HTML', 'CSS', 'JS', 'React', 'Redux', 'Node', 'MongDB'] // string dizisi, web teknolojileri
+
+const  countries = ['Finland', 'Denmark', 'Sweden', 'Norway', 'Iceland'] // string dizisi, ülkeler
+
+  
+
+// Diziyi ve dizinin uzunluğunu yazdırmak
+
+  
+
+console.log('Numbers:', numbers)
+
+console.log('Number of numbers:', numbers.length)
+
+  
+
+console.log('Fruits:', fruits)
+
+console.log('Number of fruits:', fruits.length)
+
+  
+
+console.log('Vegetables:', vegetables)
+
+console.log('Number of vegetables:', vegetables.length)
+
+  
+
+console.log('Animal products:', animalProducts)
+
+console.log('Number of animal products:', animalProducts.length)
+
+  
+
+console.log('Web technologies:', webTechs)
+
+console.log('Number of web technologies:', webTechs.length)
+
+  
+
+console.log('Countries:', countries)
+
+console.log('Number of countries:', countries.length)
 ```
