@@ -4,6 +4,6 @@ Bu reponun var olma amacı web development alanındaki bilgilerimi geliştirirke
 
 Çıkış hikayesi ise benim 365 günlük challenge'ım ile ilgili. Evet 365 gün boyunca her gün web development becerilerimi geliştirmek için çalışıyorum ve bunuda instagram blog hesabımdan paylaşıyorum. Eğer merak edersen [buraya tıklayarak ulaşabilirsin!](https://www.instagram.com/dev_anko/)
 
-**Dikkat! Bu repo şuan yapım aşamasındadır. Bittiği zaman(umarım) tamamiyle düzenleyerek herkesle paylaşacağım!**
+**Dikkat! Bu repo şuan yapım aşamasındadır. Tavsiye ve önerileriniz için profilimde iletişim bilgilerim mevcut. Herkese iyi çalışmalar**
 
 
