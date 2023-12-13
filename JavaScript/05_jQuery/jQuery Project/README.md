@@ -1,0 +1,2 @@
+# Random Image Project
+jQuery ile pratik yapmak amaçlı basit bir random image projesi. `document.querySelector` kullanmak yerine `$` işareti kullanmak ve jQuery ile gelen function'ları kullanmak bizi hızlandıracaktır.
