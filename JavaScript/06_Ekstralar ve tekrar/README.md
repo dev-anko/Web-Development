@@ -4752,6 +4752,6 @@ Yukarıdaki örnekte, iki girdi alanından verileri düğmeye tıklayarak almay�
 </html>
 ```
 
-### ***keypress, keydown ve keyup***
+### ***keydown***
 
-Farklı olay dinleyici türlerini kullanarak klavyenin tüm tuş numaralarına erişebiliriz. `KeyPress`'i kullanalım ve her klavye tuşunun keyCode'unu alalım.
+Farklı olay dinleyici türlerini kullanarak klavyenin tüm tuş numaralarına erişebiliriz. `keydown`'ı kullanalım ve her klavye tuşunun keyCode'unu alalım.
