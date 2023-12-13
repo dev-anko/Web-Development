@@ -45,9 +45,8 @@ function changeIt()
         default:
             body.classList.remove();
             body.className=" ";
-            body.classList.add("center")
-            h1.f
-            h1.textContent="Okey, you win!"                    
+            body.classList.add("center");
+            h1.textContent="Okey, you win!";                    
             break;
     }
 }
