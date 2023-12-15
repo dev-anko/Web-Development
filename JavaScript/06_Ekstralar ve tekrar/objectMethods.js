@@ -40,6 +40,10 @@ person.getPersonInfo = function ()
 // const skills = Object.values(person.skills);
 // console.log(skills);
 
+// Object.entries() methodu bir dizideki key ve value değerlerini almak için kullanılır.
+// const entries = Object.entries(person);
+// console.log(entries); 
+
 // hasOwnProperty() bir nesnede belirli bir anahtar veya özelliğin bulunup bulunmadığını kontrol etmek için kullanılır.
 // console.log(person.hasOwnProperty('age'));
 // console.log(person.hasOwnProperty('score'));
