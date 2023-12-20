@@ -1,0 +1,12 @@
+{
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "Bu reponun var olma amacı web development alanındaki bilgilerimi geliştirirken edindiğim bilgileri bir özet olarak bir yerde takılırsam diye geçmişe bakabilmek, bu bilgileri pekiştirmek için yaptığım projeleri derlemek ve tüm bunları insanlarla paylaşarak açık kaynağa ve topluluğa bir nebzede olsa yardımcı olabilmektir.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
