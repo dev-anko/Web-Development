@@ -1,6 +1,40 @@
 # Backend Nedir?
 
-- Arkayüz işte, 3 adet bileşenden oluşmaktadır: Temelde sadece bir bilgisayar olan sunucu, web uygulamasının çalışmasını sağlayan application ve kullanıcı verilerini depolayabileceğimiz database.
+Backend development (arka uç geliştirme), bir web uygulamasının veya yazılımın sunucu tarafındaki (server-side) geliştirme sürecidir. Backend, kullanıcıların görmemesine rağmen uygulamanın işlevselliğini sağlar ve verileri yönetir. Bu, veritabanı yönetimi, sunucu tarafı programlama ve uygulama mantığı oluşturma işlevlerini içerir.
+
+Backend development ile uğraşan bir geliştirici (backend developer), aşağıdaki temel becerilere sahip olmalıdır:
+
+Sunucu Tarafı Programlama Dilleri:
+
+En az bir sunucu tarafı programlama dilini iyi derecede bilmelidir. Örnek olarak, JavaScript (Node.js), Python (Django, Flask), Ruby (Ruby on Rails), Java (Spring), C# (ASP.NET), PHP gibi diller verilebilir.
+Veritabanı Yönetimi:
+
+Veritabanı yönetimi konusunda deneyimli olmalıdır. İlişkisel (MySQL, PostgreSQL) veya NoSQL (MongoDB, Redis) veritabanlarıyla çalışma bilgisine sahip olmalıdır.
+Veritabanı tasarımı, optimizasyonu ve sorguları anlamalıdır.
+API (Application Programming Interface) Geliştirme:
+
+RESTful veya GraphQL gibi API standartlarını anlamalı ve uygulamalı olarak kullanabilmelidir.
+İstemci ve sunucu arasında veri iletişimini yönetebilmelidir.
+Sunucu Konfigürasyonu ve Yönetimi:
+
+Sunucu konfigürasyonunu anlamalıdır. Web sunucuları (Apache, Nginx) ve bulut hizmet sağlayıcıları (AWS, Azure, Google Cloud) gibi konseptlere hakim olmalıdır.
+Sunucu güvenliğine dikkat etmeli ve temel ağ bilgisi bulunmalıdır.
+Web Güvenliği:
+
+Güvenlik konularında bilgi sahibi olmalıdır. SQL enjeksiyonları, XSS (Cross-Site Scripting), CSRF (Cross-Site Request Forgery) gibi saldırıları önleyebilmelidir.
+Kimlik doğrulama ve yetkilendirme konularını anlamalıdır.
+Version Control System (VCS):
+
+En azından temel seviyede bir VCS aracını (Git gibi) kullanabilmelidir. Projeleri takip etmek, işbirliği yapmak ve sürüm yönetimi yapmak için VCS bilgisi önemlidir.
+Temel Frontend Bilgisi:
+
+Frontend teknolojilerine temel düzeyde hakim olmalıdır. Sunucu ve istemci tarafı arasındaki etkileşimi anlayarak daha iyi işbirliği yapabilir.
+En azından HTML, CSS, JavaScript konularında bilgi sahibi olmalıdır.
+Problem Çözme Yeteneği:
+
+Karşılaşılan sorunları analiz edebilmeli ve etkili çözümler üretebilmelidir.
+Performans sorunları, hata ayıklama ve optimizasyon konularında yetenekli olmalıdır.
+Backend development, genellikle karmaşık işlevselliği içeren büyük projelerde kullanılır ve bir uygulamanın temelini oluşturur. Backend developer'lar, verilerin işlenmesi, güvenliği, performans ve genel uygulama mantığı konularında uzmanlaşmalıdır.
 
 ### ***Server***
 
@@ -8,12 +42,76 @@
 - Ve aslında web sitelerimizi yerel olarak oluşturacağımız zaman, [localhost](http://localhost) adı verilen bir şey kullanacağız, yani oluşturduğumuz web sitelerini sunmak için sunucu olarak kendi bilgisayarımızı kullancağız.
 - Bilgisayarını 7/24 açık tutamassın ama bunun önemi yok çünkü sadece test ederken açık ve bağlı olmasına ihtiyacımız var.
 
+#### Ek olarak ChatGPT'ye Server nedir diye sordum:
+"Server" (sunucu), bilgisayar ağlarında, diğer cihazlara (istemcilere) hizmet veren bir bilgisayar veya yazılım sistemidir. Sunucular, talepleri işleyerek istemcilere hizmet eder ve genellikle bir veya birkaç belirli görevi yerine getirirler.
+
+**İşte sunucunun temel özellikleri ve görevleri:**
+
+**İstemcilere Hizmet Verme:**
+
+Sunucular, diğer cihazlara (istemcilere) hizmet verir. Bu istemciler genellikle kullanıcı bilgisayarları, mobil cihazlar veya başka sunucular olabilir.
+
+**Veri Saklama ve Yönetme:**
+
+Sunucular, genellikle veritabanlarında veya diğer depolama sistemlerinde veriyi saklar ve yönetir. Kullanıcı hesap bilgileri, uygulama verileri, dosyalar gibi çeşitli veri türlerini depolayabilirler.
+
+**İstekleri İşleme:**
+
+Sunucular, istemcilerden gelen istekleri işler. Bu istekler genellikle HTTP (Hypertext Transfer Protocol) veya diğer iletişim protokollerini kullanarak gelir.
+
+**Web Sunucuları:**
+
+Web sunucuları, istemcilere web sayfalarını veya diğer web içeriğini sunan sunuculardır. İnternet üzerindeki çoğu web sitesi, bir veya birkaç web sunucusu kullanır.
+
+**Dosya Sunucuları:**
+
+Dosya sunucuları, istemcilere dosya ve kaynaklara erişim sağlar. Dosya paylaşımı veya depolama amaçlı olarak kullanılabilirler.
+
+**Uygulama Sunucuları:**
+
+Uygulama sunucuları, özel uygulamalara özel hizmetler sunan sunuculardır. Örneğin, bir e-ticaret uygulamasının iş mantığını işleyen bir uygulama sunucusu olabilir.
+
+**E-Posta Sunucuları:**
+
+E-posta sunucuları, e-posta iletişimini yönetir ve e-posta kutularını saklar. İstemciler, e-posta sunucularına bağlanarak e-posta alışverişi yapabilirler.
+
+**Veritabanı Sunucuları:**
+
+Veritabanı sunucuları, veritabanlarını barındıran ve yöneten sunuculardır. Veritabanı işlemleri için istemcilere hizmet ederler.
+Sunucular, çeşitli uygulama alanlarına hizmet edebilir ve genellikle güçlü donanıma ve yüksek performansa sahip olmalıdırlar. Ayrıca, yüksek güvenlik standartlarına uymaları ve yüksek erişilebilirlik sağlamaları beklenir.
+
 ### *Application*
 
 - Application backend’in ikinci yönüdür ve application temel olarak o bilgisayarda, yani sunucuda çalışan mantıktır (mantık=logic). Ve bu logic tarayıcıdan gelen isteklere nasıl yanıt vermek istediğinizi belirler.
 
 - Application gelen isteklere göre yanıt veren bir araç olarak betimlenebilir. Örneğin bir istek geliyor ve HTML sayfası döndüyorsa al sana application, tabii her zaman HTML döndürmez bazen veri gönderebilir bazen bir status code (şu 404ler varya he onlar işte) döndürebilir.
 - Bu 404’lerin sebebi tarayıcının yapılan requeste nasıl invalid(dönüş) yapacağını bilmemesidir.
+
+**Ek olarak ChatGPT'ye Application ne anlama gelmektedir diye sordum:**
+Backend development (arka uç geliştirme) bağlamında, "application" (uygulama), genellikle bir web uygulamasını veya bir yazılım uygulamasını ifade eder. Bu terim, genel olarak bir bilgisayar programının belirli bir işlevselliği gerçekleştiren bir parçasını ifade eder. Backend uygulama, bir web sitesinin veya web uygulamasının arkasında çalışan yazılım parçasını temsil eder.
+
+Backend uygulamaları şu unsurları içerebilir:
+
+1. **Uygulama Mantığı (Application Logic):**
+   - Kullanıcıların yaptığı işlemleri işleyen ve veri manipülasyonunu gerçekleştiren kod parçalarını içerir. Örneğin, bir e-ticaret uygulamasında sipariş işleme veya bir sosyal medya platformunda arkadaşlık isteklerini yönetme gibi.
+
+2. **Veritabanı Etkileşimi:**
+   - Veritabanlarına veri okuma, yazma ve güncelleme işlemlerini gerçekleştiren kodları içerir. Bu, kullanıcı hesap bilgileri, içerik verileri veya uygulama durumu gibi verileri içerir.
+
+3. **API (Application Programming Interface):**
+   - İstemcilerle (genellikle frontend tarafındaki kullanıcı arayüzü) iletişim kurabilmek için sunulan API'leri içerir. Bu, istemcilere veri sağlama veya alıcıdan veri alma yeteneklerini içerir.
+
+4. **Güvenlik Katmanları:**
+   - Kullanıcı kimlik doğrulama, yetkilendirme ve güvenlik önlemlerini içerir. Bu, kullanıcıların güvenli bir şekilde giriş yapmalarını sağlama ve uygulama güvenliğini sağlama işlevlerini içerir.
+
+5. **Sunucu Tarafı Yönetimi:**
+   - Web sunucuları, işlem yönetimi, sunucu konfigürasyonu ve performans optimizasyonu gibi sunucu tarafındaki işlemleri içerir.
+
+6. **Arka Uç Servisleri:**
+   - Backend uygulama, genellikle modüler bir yapıya sahiptir ve farklı servislerin entegrasyonunu içerebilir. Örneğin, ödeme işlemleri, harita servisleri, e-posta gönderme servisleri gibi.
+
+Backend uygulamasının amacı, genellikle iş mantığını yönetmek, verileri işlemek ve istemcilerle (kullanıcı arayüzleriyle) etkileşimde bulunmaktır. Bu uygulamalar, genellikle web sunucuları üzerinde çalışır ve istemcilere (istemci uygulamalara veya tarayıcılara) HTTP veya diğer iletişim protokollerini kullanarak hizmet verir.
+
 
 ### *Database*
 
@@ -28,11 +126,35 @@
 💡 “An asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications.”
 </aside>
 
-- Node.js’e gelelim. Node.js bir JavaScript çalışma zamanıdır. Peki çalışma zamanı ortamı nedir? Aslında şu anlama geliyor. JavaScript ilk çıktı zamanlarda sadece web üzerinde çalışabiliyordu. Yani web içinde hapsolmuş durumdaydı. İşte node’un yaptığı iş bu JavaScripti tarayıcı dünyasından etkili bir şekilde kurtardı ve masaüstü veya sunucu tarafında her türlü uygulamayı yazmak için kullanmamıza izin verecek özgürlüğü verdi.
+- Node.js’e gelelim. Node.js bir JavaScript çalışma zamanıdır. Peki çalışma zamanı ortamı nedir? Aslında şu anlama geliyor. JavaScript ilk çıktığı zamanlarda sadece web üzerinde çalışabiliyordu. Yani web içinde hapsolmuş durumdaydı. İşte node’un yaptığı iş bu JavaScripti tarayıcı dünyasından etkili bir şekilde kurtardı ve masaüstü veya sunucu tarafında her türlü uygulamayı yazmak için kullanmamıza izin verecek özgürlüğü verdi.
 - Node.js eşzamansız ve olay odaklıdır (asynchronous event-driven). Peki bu ne anlama geliyor? Asenkron JavaScript kodunuzun her şeyi sırayla yapmak zorunda olmadığı anlamına gelir. Ki bu da kod çalışırken aynı anda başka bir şey yapabileceğiniz anlamına gelir.
 - Özetle Node’a ihtiyaç duymamızın nedeni, JavaScript kullanarak genellikle bilgisayarda bir uygulama oluşturmamıza izin vermesidir.
 - Server dediğim şey normal bir bilgisayardır biliyorsun tarayıcı değildir ve node.js bunu gerçekleştirmemizi sağlayan şeydir.
 
+**Ek olarak ChatGPT'ye Node.js nedir diye sordum:**
+Node.js, sunucu tarafı (server-side) JavaScript çalıştırmak için tasarlanmış, açık kaynaklı ve hızlı bir çalışma ortamıdır. Node.js, Google'ın V8 JavaScript motorunu temel alır ve geliştiricilere JavaScript dilini kullanarak ağ uygulamaları oluşturma yeteneği sağlar.
+
+Node.js'in temel özellikleri şunlardır:
+
+1. **Hızlı ve Verimli:**
+   - Node.js, V8 motorunu kullanarak JavaScript kodunu hızlı bir şekilde yürütür. Bu, yüksek performanslı ve verimli uygulamalar geliştirmeye olanak tanır.
+
+2. **Olay Odaklı ve Asenkron:**
+   - Node.js, olay tabanlı ve asenkron bir yapıya sahiptir. Bu, uygulamaların aynı anda birden çok görevi ele almasına ve daha verimli bir şekilde kaynakları kullanmasına olanak tanır.
+
+3. **Geniş Modül Kütüphanesi:**
+   - Node.js, geniş bir modül kütüphanesine sahiptir. Bu kütüphane, HTTP istemcisi ve sunucusu, dosya sistemine erişim, veritabanı bağlantıları, şifreleme ve daha birçok konuda kullanılabilecek hazır modülleri içerir.
+
+4. **Platform Bağımsız:**
+   - Node.js, Linux, macOS ve Windows gibi farklı işletim sistemlerinde çalışabilir. Bu, geliştiricilere farklı platformlarda tutarlı bir şekilde uygulama geliştirme olanağı sağlar.
+
+5. **Aktif Topluluk ve Ekosistem:**
+   - Node.js, geniş ve aktif bir geliştirici topluluğuna sahiptir. Npm (Node Package Manager) üzerinden erişilebilen birçok üçüncü taraf paketi içerir. Bu, geliştiricilerin kodlarını paylaşmalarını ve kullanmalarını sağlar.
+
+6. **Mikroservis ve API Geliştirmeye Uygun:**
+   - Node.js, mikroservis mimarileri ve RESTful API'lar gibi modern uygulama geliştirme yaklaşımları için uygun bir platform sunar.
+
+Node.js, özellikle hafif, ölçeklenebilir ve hızlı uygulamalar geliştirmek isteyen geliştiriciler arasında yaygın bir tercih haline gelmiştir. Web sunucuları, API'lar, gerçek zamanlı uygulamalar ve mikroservis mimarileri gibi birçok farklı uygulama türü için kullanılmaktadır.
 ## Using Node.js
 
 - node -v : Node sürümünü gösterir.
@@ -46,8 +168,7 @@
 ## How to Use the Native Node Modules
 
 - Native Node Modules nedir? Başlangıç alet setiniz gibi bir şeydir.
-- Documentaionda çok fazla şey var şimdilik File System’ı göreceğiz bu ders için.
-
+Arkadaşlar bu konu çok derin bir konu bu kısımda yapmanız gereken şey Node.js dokumantasonunu okumak olmalıdır. Şahsen ben oyle yapıyorum :D
 ### *File System*
 
 - Dosya sistemi, local depolama alanına erişmemizi sağlayan local node modülüdür. Ve bunu kullanmaya başlamak için ya dosya sistemi modülünden kodu içe aktarmanız gerekir ya da bu modülden ihtiyacımız olan kod parçalarını talep edebiliriz.
@@ -129,7 +250,7 @@ app.listen(3000, () => { // ilk kısım porttur. (bağlantı noktası). Dinleme 
 
 ## Localhost tam olarak nedir?
 
-- [Localhost](http://Localhost) basitçe internette bir sunucumuz olmadığında ve bunun yerine sunucumuzu yerel olarak barındırmak istediğimizde kullanılır. Yani kendi bilgisayarımızı we bistemizin arka ucunun sunucusu yapmak ve bu da hostingimizin yerel kısmıdır.
+- [Localhost](http://Localhost) basitçe internette bir sunucumuz olmadığında ve bunun yerine sunucumuzu yerel olarak barındırmak istediğimizde kullanılır. Yani kendi bilgisayarımızı websitemizin arka ucunun sunucusu yapmak ve bu da hostingimizin yerel kısmıdır.
 
 ## Port tam olarak nedir?
 
@@ -146,8 +267,8 @@ app.listen(3000, () => { // ilk kısım porttur. (bağlantı noktası). Dinleme 
 
 ### Cannot Get / ne anlama geliyor?
 
-- Bu dizin sayfamıza, ana sayfamıza ulaşamadığı anlamına gelir.
-- Nedeni bir sonraki dersteymiş hay amk
+- Bu dizin sayfamıza, ana sayfamıza ulaşamadığı anlamına gelir. Yani bunu şöyle düşün 15.000 odalı bir hotele geldin ama girişte seni yönlendiricek kimse yok mal gibi kalıyorsun ortada, aynen o hesap nereye gideceğini bilemediği için hata döndürüyor.
+
 
 # HTTP Requests
 
@@ -159,7 +280,7 @@ app.listen(3000, () => { // ilk kısım porttur. (bağlantı noktası). Dinleme 
 1. ***Get:*** Daha önce sunucumuzu çalıştırıp web sitemizi sunucudan istemeye çalıştığımızda alamayacağımızı söyleyen bir hata aldığımızı hatırla. Get öğrenmemiz gereken ilk kelimelerden biridir. Ve bu, sunucudan bir kaynak talep etmek istediğimiz zamandır. Bu kaynak bir web sitesi olabilir, bir metin parçası olabilir, veritabanından veya sunucudan bir veri parçası olabilir. Ancak get anahtar sözcüğünü kullanarak Http isteğinizi yaptığınızda sunucudan bir şey alıyorsunuz.
 2. ***Post:*** Postu anlamakta benzer şekildedir. Bu durumdada yaptığımız şey sunucuya bir kaynak göndermektir. Bu, web sitenize kaydolmak için bir formunuz varsa, kaydolma düğmesine tıkladıklarında e-posta ve şifrelerin sunucunuza gönderilmesi gibi bir bilgi parçası olabilir. Bu da bir gönderi talebi kullanılarak yapılacaktır. Sunucu tarafında ise bu bilgileri alabilir ve daha sonra bunlarla istediğinizi yapabilir, bir veritabanına kaydedebilir veya işleyebilir ya da bir şekilde bunlarla çalışabilirsiniz.
 3. ***Put:*** Put ve patch birbirleriyle bir şekilde ilişkilidir çünkü temelde bunlar güncelleme yöntemleridir. Ancak bunlar biraz farklıdır. Bir kaynağı gönderdiğiniz her neyse onunla değiştirmek istediğinizde istekte bulunacağını söyleyeceğim. Yani bir şeyi tamamen değiştirerek güncellemek istiyorsun.
-4. ***Patch:*** Patch biraz farklıdır ve esasen bir kaynağı yamamak istiyorsunuz, bunların her ikiside güncelleme olsa da biraz farklı çalışırlar. Bu iki güncelleme türü arasındaki fark için iyi bir benzetme: Amazon iadesi. Diyelim ki amazondan bir bisiklet satın aldınız ve teslim aldığınızda ne yazık ki lastiklerden biri kırıldı. Şimdi amazona bana kırık bisiklet gönderdiniz dediğinde iki seçenekleri var: Ya sana tamamen yeni bir bisiklet vermek için bir satış talebi kullanmalıdır sadece bisikletinizi yeni bir bisikletle değiştiriyorlar ki bu şekilde bisikleti güncellemiş olursun. Diğer seçen ise patch(yama) talebidir: bu durumda size sadece çalışan tekerleği gönderirler böyle sizde kırık tekerleği bu yeni çalışan tekerlekle değiştirebilir ve kırık bisiklete yama yapabilirsiniz.
+4. ***Patch:*** Patch biraz farklıdır ve esasen bir kaynağı yamamak istiyorsunuz, bunların her ikiside güncelleme olsa da biraz farklı çalışırlar. Bu iki güncelleme türü arasındaki fark için iyi bir benzetme: Amazon iadesi. Diyelim ki amazondan bir bisiklet satın aldınız ve teslim aldığınızda ne yazık ki lastiklerden biri kırıldı. Şimdi amazona bana kırık bisiklet gönderdiniz dediğinde iki seçenekleri var: Ya sana tamamen yeni bir bisiklet vermek için bir satış talebi kullanmalıdır sadece bisikletinizi yeni bir bisikletle değiştiriyorlar ki bu şekilde bisikleti güncellemiş olursun. Diğer seçenek ise patch(yama) talebidir: bu durumda size sadece çalışan tekerleği gönderirler böyle sizde kırık tekerleği bu yeni çalışan tekerlekle değiştirebilir ve kırık bisiklete yama yapabilirsiniz.
 5. ***Delete:*** Sadece kaynakları siler.
 
 <aside>
@@ -174,8 +295,7 @@ app.get("/", (req,res) =>
 	res.send("Hello World!")
 })
 // Bir get fonksiyonu ekledik ve artık sunucumuz get isteği geldiğinde ne 
-// yapacağını biliyor. Buradaki "/"in kullanımını tam olarak anlayamadım.
-// Sanırım ana sayfa demek oluyor. Dizin muhabbeti gibi bişey.
+// Buradakai "/" kullanımı sanırım ana sayfa demek oluyor. Dizin muhabbeti gibi bişey.
 // req -> istek, res -> yanıt demek.
 ```
 
@@ -227,19 +347,40 @@ app.get("/contact", (req, res) => {
 
 # POSTMAN
 
+- HTTP istekleri atabilmen için güzel bir uygulama kullan bence kanks.
 - Web response statü kodları için (404 vb) →
 
 [HTTP response status codes - HTTP | MDN](http://developer.mozilla.org/docs/Web/HTTP/Status)
 
 ### http request status özeti:
+HTTP (Hypertext Transfer Protocol) isteklerinin ve yanıtlarının durumlarını belirtmek için kullanılan durum kodları (status codes) HTTP protokolünün temel bir parçasıdır. İşte bazı yaygın HTTP durum kodlarının anlamları:
 
-- Bekle (100-199)
-- BAŞARILISIN!!!! (200-299)
-- başka yere geç (yönlendirme) (300-399)
-- sıçtın (400-499)
-- sıçtım (500-599)
+1. **1xx (Informational):**
+   - `100 Continue`: İstemcinin, sunucunun bir sonraki isteği almasını beklemesi gerektiğini belirten bir bilgi kodu.
 
-Aga hiç not almadım çünkü not alıncak bir şey yok postman diye bişi var serverın üzerinden http request test edebiliyosun güzel bişimiş.
+2. **2xx (Success):**
+   - `200 OK`: İstek başarıyla tamamlandı.
+   - `201 Created`: Yeni bir kaynak başarıyla oluşturuldu.
+   - `204 No Content`: İstek başarıyla tamamlandı, ancak yanıt içeriği boş.
+
+3. **3xx (Redirection):**
+   - `301 Moved Permanently`: Kaynak kalıcı olarak başka bir konuma taşındı.
+   - `302 Found`: Kaynak geçici olarak başka bir konuma taşındı.
+   - `304 Not Modified`: İstemcinin önbellek sürümü güncel ve kaynak değişmemiş, bu nedenle içerik gönderilmez.
+
+4. **4xx (Client Error):**
+   - `400 Bad Request`: İstek, sunucu tarafından anlaşılamadı veya işlenemedi.
+   - `401 Unauthorized`: İstek için yetkilendirme gerekiyor.
+   - `403 Forbidden`: İstek, sunucu tarafından reddedildi (yetkilendirme yok veya yetersiz).
+   - `404 Not Found`: İstek yapılan kaynak bulunamadı.
+
+5. **5xx (Server Error):**
+   - `500 Internal Server Error`: Sunucu bir iç hata ile karşılaştı ve isteği tamamlayamadı.
+   - `502 Bad Gateway`: Sunucu, başka bir sunucudan gelen geçersiz yanıtı alarak isteği tamamlayamadı.
+   - `503 Service Unavailable`: Sunucu şu anda hizmet veremiyor (aşırı yük, bakım, vb.).
+   - `504 Gateway Timeout`: Sunucu, bir başka sunucudan gelen yanıtı belirli bir süre içinde alamadı.
+
+Bu durum kodları, HTTP iletişimi sırasında istemci ve sunucu arasındaki durumu belirtmek için kullanılır. Durum kodları, isteğin başarıyla tamamlandığını, yönlendirildiğini, hatalı olduğunu veya başka bir durumu temsil eder. Bu durum kodları, web tarayıcıları ve diğer HTTP istemcileri tarafından yorumlanarak kullanıcılara uygun mesajlar gösterilmesine yardımcı olur.
 
 # İntroduction to Middlewares
 
