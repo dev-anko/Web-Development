@@ -9,7 +9,24 @@ body
 {
     background-image: linear-gradient(to right, black, gold);
 }
-h1,h2,h3
+.headers,.main
 {
-    color: red;
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 40px;
+}
+.box
+{
+    width: 30px;
+    height: 30px;
+}
+input,button
+{
+    font-size: 30px;
+    padding: 5px;
 }

@@ -1,7 +1,24 @@
 <%- include("partials/header")%>
 <body>
-    <h1>Welcome Boss, How are you?</h1>
-    <h2><%= date %></h2>
-    <h3><%= time  %></h3>
+    <div class="headers">
+        <h1>Welcome Boss, How are you?</h1>
+        <h2><%= date %></h2>
+        <h3></h3>
+    </div>
+    
+    <div class="main">
+        <% for(var i = 0; i < items.length; i++){ %>
+            <div class="item">
+                <input type="checkbox" class="box">        
+                  <%= items[i] %>        
+            </div>
+              <% } %>
+        <form class="" action="/" method="post">
+            <input type="text" name="newTodo" placeholder="Add some jobs!" autocomplete="off">
+            <button type="submit" name="listSubmit">+</button>
+        </form>
+    </div>
+    
+<script type="text/javascript" src="./js/clock.js"></script>
 </body>
 </html>

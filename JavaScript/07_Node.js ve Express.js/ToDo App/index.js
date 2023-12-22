@@ -7,7 +7,7 @@ const port = 3000;
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(express.static("public"));
 
-// Timer section
+// Date section
 const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 const d = new Date();
 let day = d.getDay();
@@ -16,22 +16,34 @@ let month = d.getMonth()+1;
 if (month < 10) month = "0" + month;
 let year = d.getFullYear();
 let fullDate = `Today is ${weekday[day]}, ${date}/${month}/${year}`;
-let hours = d.getHours();
-let minutes = d.getMinutes();
-let seconds = d.getSeconds();
-let time = `${hours}:${minutes}:${seconds}`
 
+// list items
+const listItems=[];
 
 app.get("/",(req,res)=>
 {
-    (res.render("index.ejs",
+   
+    res.render("index.ejs",
     {
     date: fullDate,
-    time: time
-    }));  
+    items: listItems
+    });
 })
-
-app.listen(port,()=>
+app.post("/",(req,res)=>
+{
+    const item = req.body.newTodo;
+    if(item=="")
+    {
+        
+        res.redirect("/");
+    }
+    else
+    {
+        listItems.push(item);
+        res.redirect("/");
+    }
+});
+app.listen(port,(req,res)=>
 {
     console.log(`Server running on port ${port}`);
 })
