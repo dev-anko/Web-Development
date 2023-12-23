@@ -441,3 +441,41 @@ Node için en yaygın kullanılan loglama aracı yazılımlarından biri Morgan 
 - .use yöntemi istek geldiğinde kullanılacak bir ara katmak belirtmek için kullanılır. Ve orada bir fonksiyona geçebiliriz ve istek, bir yanıt nesnesi ve sonraki(next()) metodu vardır çünkü birden fazla ara yazılım olabilir ve ayrıca bu ortada olan bir şeydir.
 - Bir sonraki fonksiyon temel olarak ara yazılımdan ne zaman geçmemiz ve sunucu işleyicilerinin akışına devam etmemiz gerektiğini belirler.
 - Çok karışık iş üstünden geçmek isticek 😀
+
+### İşte bir örnek:
+```javascript
+const express = require('express');
+const app = express();
+
+// İlk middleware fonksiyonu
+const middleware1 = (req, res, next) => {
+  console.log('Middleware 1 çalıştı');
+  next(); // Bir sonraki middleware'e geçmek için next() fonksiyonu kullanılır
+};
+
+// İkinci middleware fonksiyonu
+const middleware2 = (req, res, next) => {
+  console.log('Middleware 2 çalıştı');
+  next();
+};
+
+// Üçüncü middleware fonksiyonu
+const middleware3 = (req, res) => {
+  console.log('Middleware 3 çalıştı');
+  res.send('Middleware örnek başarılı bir şekilde tamamlandı!');
+};
+
+// Middleware'leri uygula
+app.use(middleware1);
+app.use(middleware2);
+app.use(middleware3);
+
+// Express uygulamasını belirli bir port üzerinden dinle
+const port = 3000;
+app.listen(port, () => {
+  console.log(`Uygulama ${port} portunda çalışıyor`);
+});
+```
+Bu örnek, üç farklı middleware fonksiyonunu içerir (middleware1, middleware2, ve middleware3). app.use() yöntemiyle bu middleware'ler, gelen her HTTP isteğine uygulanır. Middleware fonksiyonları, req (request), res (response), ve next parametrelerini alır. next() fonksiyonu, bir sonraki middleware'e geçişi sağlar.
+
+Örnek çalıştırıldığında, her istek için sırayla her üç middleware fonksiyonu da çalışacaktır. Bu, isteğin başlangıcından sonuna kadar belirli işlemleri uygulama veya isteği modifiye etme şansı verir.
