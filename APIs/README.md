@@ -12,9 +12,23 @@
 
 ## REST API
 
-- REST API belirli bir dizi kuralı takip eden API’lerdir.
-- API dökümantasyonunu seçebileceğin bir öğle yemeği menüsü gibi düşün. Ben ne istiyorum? Ona göre sipariş vermeliyim! Tabii burda sipariş yerine http request yolluyoruz xD
-- Bu kısım güncellenecek ne biçim not almışım ben :D
+REST API (Representational State Transfer - Temsil Durumu Transferi), web hizmetlerini tasarlamak ve uygulamak için kullanılan bir mimari stildir. REST, Roy Fielding tarafından 2000 yılında doktora tezi kapsamında tanımlanmıştır ve bu, günümüzde web servislerinin tasarımında popüler bir yaklaşım haline gelmiştir.
+
+REST API'nin temel özellikleri şunlardır:
+
+1. **Kaynaklar (Resources):** Her kaynak, benzersiz bir URI (Uniform Resource Identifier) ile temsil edilir. Örneğin, bir blog uygulamasında makaleler, yorumlar veya kullanıcılar gibi kaynaklar olabilir.
+
+2. **HTTP Metotları (HTTP Methods):** REST, HTTP protokolünü kullanır ve bu protokoldeki temel metotları kullanarak işlemler gerçekleştirir. Örneğin, `GET` metodu bir kaynağın okunması için, `POST` metodu yeni bir kaynak oluşturmak için kullanılır.
+
+3. **Temsil Durumu (Representation State):** Her kaynak, belirli bir durumu temsil eder ve bu durum genellikle JSON veya XML formatında ifade edilir. Bu veri formatları, uygulamalar arasında veri alışverişini sağlamak için yaygın olarak kullanılır.
+
+4. **Bağlantısızlık (Statelessness):** REST, bağlantısız bir mimariyi benimser. Her istek bağımsızdır ve isteğin bağlamı, sunucu tarafında saklanmaz. Her istek, gerekli bilgileri içerir ve sunucu, bu isteği anlamak ve işlemek için yeterli bilgiye sahiptir.
+
+5. **Temel URL (Base URL):** Bir REST API, bir temel URL altında organize edilir. Örneğin, `https://api.example.com` gibi bir temel URL kullanılabilir.
+
+REST API, genellikle JSON veya XML gibi hafif ve yaygın olarak desteklenen veri formatlarıyla çalışır. JSON, özellikle JavaScript tabanlı uygulamalar için doğal bir formattır.
+
+RESTful servisler, genellikle basit, hafif ve kolayca anlaşılabilir olmaları nedeniyle tercih edilir. Ancak, veri taleplerinin değişken olduğu durumlarda (overfetching veya underfetching gibi), daha fazla esneklik ve kontrol sağlayan GraphQL gibi alternatif teknolojilere yönelmek de mümkündür.
 
 ## STRUCTURING API REQUESTS
 
