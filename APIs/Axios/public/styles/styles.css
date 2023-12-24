@@ -1,0 +1,67 @@
+html
+{
+    
+}
+*
+{
+    margin:0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1
+{
+    font-weight: 1;
+}
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+form {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 80px;
+    grid-column-gap: 10px;
+  }
+  .form-submit {
+    outline: none;
+    border: 1px solid rgb(232, 232, 232);
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 36px;
+  }
+  .form-submit:focus {
+    box-shadow: 0 0 0 0.5px rgb(153, 153, 153);
+  }
+  .cards {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+  }
+  .card-item {
+    width: 100%;
+    padding: 5px 20px 20px;
+    border: 1px solid rgb(232, 232, 232);
+    background-color: white;
+    border-radius: 5px;
+  }
+  .card-info {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card-activity {
+    line-height: 1.2;
+    margin-top: 10px;
+  }
+  .tag-error {
+    width: 100%;
+    text-align: center;
+  }
