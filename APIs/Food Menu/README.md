@@ -31,3 +31,33 @@ Ek olarak projeyi geliştirirken zorlandığım veya öğrendiğim yerlerin notl
 ```
 
 Bu tür `type` değerleri, HTML form elementleri içinde kullanıldığında önemlidir ve kullanıcının form üzerindeki butonları kullanarak hangi işlemleri gerçekleştirebileceğini belirler.
+
+## JSON.parse ne işe yarar? JSON.stringify'dan farkı nedir?
+`JSON.parse` ve `JSON.stringify`, JSON (JavaScript Object Notation) veri formatıyla çalışan iki JavaScript fonksiyonudur. Her biri farklı bir amaca hizmet eder:
+
+1. **JSON.parse:**
+   - `JSON.parse` fonksiyonu, JSON formatındaki bir string'i JavaScript nesnesine dönüştürür.
+   - JSON formatı, JavaScript nesnelerini temsil etmek için kullanılan bir metin formatıdır. JSON'daki string, obje, dizi, sayı, boolean ve null değerlerini içerebilir.
+   - Örnek:
+
+     ```javascript
+     const jsonString = '{"name": "John", "age": 30, "city": "New York"}';
+     const parsedObject = JSON.parse(jsonString);
+     console.log(parsedObject);
+     // Çıktı: { name: 'John', age: 30, city: 'New York' }
+     ```
+
+2. **JSON.stringify:**
+   - `JSON.stringify` fonksiyonu, bir JavaScript nesnesini JSON formatındaki bir string'e dönüştürür.
+   - Bu fonksiyon, JavaScript nesnelerini JSON formatına dönüştürerek, veriyi başka bir uygulama veya web sunucusuyla paylaşmak veya depolamak için kullanılır.
+   - Örnek:
+
+     ```javascript
+     const person = { name: 'John', age: 30, city: 'New York' };
+     const jsonString = JSON.stringify(person);
+     console.log(jsonString);
+     // Çıktı: '{"name":"John","age":30,"city":"New York"}'
+     ```
+
+`JSON.parse` ve `JSON.stringify` fonksiyonları, birbirlerinin tersi olarak düşünülebilir: `JSON.parse`, JSON formatındaki string'i JavaScript nesnesine dönüştürürken, `JSON.stringify`, JavaScript nesnesini JSON formatındaki bir string'e dönüştürür. Bu iki fonksiyon, genellikle web uygulamalarında API'larla veya veritabanlarıyla iletişim kurarken kullanılır.
+
